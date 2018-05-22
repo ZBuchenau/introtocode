@@ -1,0 +1,83 @@
+
+html, body {
+  background-color: #eef7fa;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.sun {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.neighborhood {
+  height: 270px;
+  width: 100%;
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.house {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  margin-left: 25px;
+  background-color: #eef7fa;
+  position: relative;
+}
+
+.roof {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid #631919;
+}
+
+.house-body {
+  height: 150px;
+  width: 200px;
+  background-color: grey;
+  padding-top: 20px;
+  position: relative;
+}
+
+.window {
+  height: 70px;
+  width: 40%;
+  background-color: lightblue;
+  margin-left: 30%;
+}
+
+.door {
+  height: 50px;
+  width: 40px;
+  background-color: #631919;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.door-handle {
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+}
+
+.land {
+  height: 600px;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+  top: 500px;
+  left: 0;
+}
