@@ -1,0 +1,20 @@
+@media (min-width: 1200px) {
+
+    .favorites-section {
+      padding-bottom: 5rem;
+    }
+
+    .ring {
+       height: 33rem;
+       width: 33rem;
+    }
+
+    .ring:hover {
+      transform: scale(1.2);
+    }
+
+    .fav-moments {
+      padding: 5rem;
+    }
+
+}

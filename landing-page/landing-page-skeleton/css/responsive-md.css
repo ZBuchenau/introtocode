@@ -1,0 +1,23 @@
+@media (min-width: 900px) and (max-width: 1023px) {
+
+    /* .fav-moments {
+      padding: 2rem;
+    } */
+
+    .ring {
+       height: 28rem;
+       width: 28rem;
+    }
+
+    .contact-section {
+      margin: 0 auto;
+      padding: 8rem;
+      width: 80%;
+    }
+
+
+    .form-box {
+      padding: 2rem;
+      width: 100%;
+    }
+}

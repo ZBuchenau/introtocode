@@ -1,5 +1,6 @@
 /* Extra small devices (phones, 600px and down) */
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
 
   h2 {
     font-size: 2.3rem;
@@ -39,7 +40,7 @@
 /* HOME SECTION ------------------------------------------------------------- */
     .home-section-one {
       position: relative;
-      height: 50rem;
+      height: 60rem;
       border: 2px solid green;
       padding: 2rem 2rem 1rem 2rem;
     }
@@ -76,8 +77,6 @@
     .favorites-section {
       position: relative;
       width: 100%;
-      /* height: 100rem; */
-      border: 2px solid teal;
       padding: 0;
       display: block;
     }
@@ -93,7 +92,6 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      border: 1px solid red;
     }
 
     .moments {
@@ -168,5 +166,36 @@
     }
 
 
+/* CONTACT SECTION ---------------------------------------------------------- */
+
+    .contact-section {
+      padding: 5rem;
+      width: 100%;
+    }
+
+
+    .form-box {
+      padding: 2rem;
+      width: 100%;
+    }
+
+
+    /* FOOTER ---------------------------------------------------------- */
+
+    footer {
+      height: 20rem;
+    }
+
+    .footer-icons {
+      top: 40%;
+    }
+
+    i.footer-icon {
+      font-size: 4rem;
+    }
+
+    .copyright-text {
+      font-size: 1.2rem;
+    }
 
 }
