@@ -9,16 +9,15 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 10px;
-  font-family: arial, sans-serif;
-
+  font-family: sans-serif;
 }
 
 h2 {
   font-size: 2.5rem;
   text-align: center;
   letter-spacing: .1rem;
-  margin: 1rem;
-  font-weight: 300;
+  margin: 5rem 2rem 2rem 2rem;
+  font-weight: 400;
 }
 
 
@@ -26,9 +25,63 @@ h2 {
   HEADER
 ============================================================================= */
 header {
+  display: table;
   height: 10rem;
   width: 100%;
   background-color: #333;
+}
+
+.logo-box {
+  position: relative;
+  display: table-cell;
+  width: 15%;
+  border: 1px solid blue;
+}
+
+img.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 7.5rem;
+  border: 1px solid blue;
+}
+
+nav {
+  display: table-cell;
+  height: 10rem;
+  width: 85%;
+  border: 1px solid white;
+}
+
+ul.nav-list {
+  /* width: 100%; */
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px dotted yellow;
+}
+
+li.nav-item {
+  display: table-cell;
+  height: 100%;
+  width: 20%;
+}
+
+li.nav-item a.nav-link {
+  border: 1px solid grey;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #f9f9f9;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 10rem;
 }
 
 /* =============================================================================
@@ -234,7 +287,7 @@ When user hovers over ring
 .pricing-section {
   width: 100%;
   border: 2px solid brown;
-  padding: 1rem;
+  padding: 5rem 1rem;
   border-collapse: collapse;
   overflow: hidden;
   display: table;
@@ -341,42 +394,25 @@ a.btn-prim:link,
 a.btn-prim:visited  {
   display: block;
   max-width: 75%;
-  background-image: linear-gradient(to bottom, #5fb431 0%, #35641b 50%, #59a530 100%);
-  background-size: auto 200%;
-  color: #f5f5f5;
+  background-color: #eee;
+  color: #333;
   font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
   padding: 1.5rem 4rem;
   margin: 0 auto;
   margin: auto;
-  border-radius: 1rem;
+  border-radius: .3rem;
   cursor: pointer;
-  box-shadow: 0 .5rem 2rem 0 rgba(0,0,0, .3);
-  transition: all .15s;
   letter-spacing: .5px;
   font-weight: 100;
-}
-
-a.btn-prim:hover {
-  box-shadow: 0 .5rem 2rem 0 rgba(0,0,0, .8);
-  color: #f5f5f5;
-  font-weight: 300;
-  font-size: 1.45rem;
-}
-
-a.btn-prim:active {
-  box-shadow: 0 .5rem 2rem 0px rgba(0,0,0, .1);
 }
 
 
 /* CONTACT SECTION ---------------------------------------------------------- */
 
 .contact-section {
-  background-image: url("https://images.unsplash.com/photo-1470322450444-8ccc64987ccf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a18d70aa45c470e60a575dca38c370a2&auto=format&fit=crop&w=1350&q=80");
-  background-size: cover;
-  background-position: center;
-  padding: 5rem;
+  padding: 10rem;
   min-height: 60rem;
   width: 100%;
   border: 2px dotted purple;
@@ -392,10 +428,11 @@ a.btn-prim:active {
   padding: 4rem;
   height: 100%;
   width: 40%;
-  /* border: 2px solid white; */
+  border: 1px solid black;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0,0,0, 0);
   border-radius: .5rem;
+  /* box-shadow: 0 .5rem .5rem .5rem rgba(0,0,0,.25) */
 }
 
 .form-box input,
@@ -405,10 +442,9 @@ a.btn-prim:active {
   font-size: 1.6rem;
   display: block;
   width: 100%;
-  /* margin-top: 2rem; */
   outline: none;
   border: none;
-  border: 1px solid black;
+  border: 1px solid grey;
   cursor: text;
   transition: all .3s;
   border-radius: .3rem;
@@ -442,7 +478,49 @@ a.btn-prim:active {
 /* FOOTER ---------------------------------------------------------- */
 
 footer {
-  height: 20rem;
+  position: relative;
+  height: 30rem;
   background-color: #333;
+  text-align: center;
+}
+
+.footer-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+}
+
+.footer-list {
+  display: table;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-item {
+  display: table-cell;
+  list-style: none;
+  padding: 2rem;
+}
+
+.footer-icons a {
+  border: 1px dotted white;
+  display: inline-block;
+  color: #333;
+}
+
+i.footer-icon {
+  font-size: 5rem;
+  color: #aaa;
+}
+
+.copyright-text {
+  width: 100%;
+  position: absolute;
+  bottom: .5rem;
+  text-align: center;
+  color: #aaa;
+  font-size: 1.3rem;
 }
 /*  */
