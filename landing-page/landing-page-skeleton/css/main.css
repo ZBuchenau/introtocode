@@ -394,7 +394,7 @@ a.btn-prim:link,
 a.btn-prim:visited  {
   display: block;
   max-width: 75%;
-  background-color: #eee;
+  background-color: darkgrey;
   color: #333;
   font-size: 1.4rem;
   text-align: center;
