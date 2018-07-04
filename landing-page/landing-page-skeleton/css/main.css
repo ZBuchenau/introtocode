@@ -385,7 +385,7 @@ ul.pricing-box {
 
 .pricing-box li {
   padding: 2rem 3rem;
-  /* border-top: 1px solid lightgrey; */
+  border-top: 1px solid lightgrey;
 }
 
 .pricing-box i {

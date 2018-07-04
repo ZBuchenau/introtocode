@@ -5,12 +5,16 @@
     }
 
     .ring {
-       height: 33rem;
-       width: 33rem;
+       height: 35rem;
+       width: 35rem;
     }
 
     .ring:hover {
       transform: scale(1.2);
+    }
+
+    .ring.raise:hover {
+      transform: translateY(-50%) scale(1.2);
     }
 
     .fav-moments {
