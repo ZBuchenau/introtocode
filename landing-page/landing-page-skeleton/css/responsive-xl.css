@@ -13,8 +13,6 @@
       transform: scale(1.2);
     }
 
-
-
     .ring.raise:hover {
       transform: translateY(-50%) scale(1.2);
 

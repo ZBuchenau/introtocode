@@ -1,0 +1,10 @@
+
+
+@media (min-width: 2000px) {
+
+  .ring.raise:hover {
+    transform: translateY(-50%) scale(1.4);
+
+  }
+
+}

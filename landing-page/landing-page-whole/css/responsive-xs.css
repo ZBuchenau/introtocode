@@ -1,0 +1,200 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media (max-width: 768px) {
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+/* =============================================================================
+  HEADER
+============================================================================= */
+
+    header {
+      display: inline-block;
+      height: auto;
+    }
+
+    .logo-box {
+      display: block;
+      height: 10rem;
+      width: 100%;
+    }
+
+    nav {
+      display: block;
+      height: 7.5rem;
+      width: 100%;
+    }
+
+    li.nav-item a.nav-link {
+      line-height: 7.5rem;
+      font-size: 1.3rem;
+    }
+
+
+/* =============================================================================
+  MAIN
+============================================================================= */
+
+/* HOME SECTION ------------------------------------------------------------- */
+    .home-section-one {
+      position: relative;
+      height: 60rem;
+      padding: 2rem;
+    }
+
+    .top-modal {
+      height: 100%;
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    a.hire-me-btn {
+      height: 10rem;
+      width: 10rem;
+      line-height: 10rem;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .home-section-two {
+      display: none;
+
+    }
+
+
+/* ABOUT SECTION ------------------------------------------------------------- */
+
+    .about-section__top p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+    }
+
+
+/* FAVORITES SECTION ------------------------------------------------------------- */
+    .favorites-section {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      display: block;
+    }
+
+    .favorites-section__inner {
+      width: 100%;
+      height: 100%;
+    }
+
+    .fav-moments {
+      position: relative;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .moments {
+      padding: 1rem;
+      max-height: none;
+    }
+
+    .ring {
+      position: relative;
+      display: block;
+      height: 32rem;
+      width: 32rem;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
+    .ring:hover {
+      transform: none;
+    }
+
+    a.ring__child {
+      background-color: rgba(255, 255, 255, .3);
+      color:  rgba(0, 0, 0, 1);
+      font-size: 1.5rem;
+    }
+
+    .four {
+      display: none;
+    }
+    .five {
+      display: none;
+    }
+
+    .raise {
+      transform: none;
+    }
+
+    .ring.raise:hover {
+      transform: none;
+    }
+
+
+    /* PRICING SECTION ---------------------------------------------------------- */
+
+    .pricing-section {
+      width: 100%;
+      display: block;
+    }
+
+    .price-category {
+      display: block;
+    }
+
+    .price-category__box {
+      display: block;
+      width: 100%;
+    }
+
+    .pricing-table{
+        width: 100%;
+        display: block;
+    }
+
+    .pricing-row {
+        display: block;
+        width: 100%;
+    }
+
+    .pricing-data {
+        display: block;
+        width: 100%;
+        padding: 2rem;
+    }
+
+
+/* CONTACT SECTION ---------------------------------------------------------- */
+
+    .contact-section {
+      padding: 5rem;
+      width: 100%;
+    }
+
+
+    .form-box {
+      padding: 2rem;
+      width: 100%;
+    }
+
+
+    /* FOOTER ---------------------------------------------------------- */
+
+    footer {
+      height: 20rem;
+    }
+
+    .footer-icons {
+      top: 40%;
+    }
+
+    i.footer-icon {
+      font-size: 4rem;
+    }
+
+    .copyright-text {
+      font-size: 1.2rem;
+    }
+
+}

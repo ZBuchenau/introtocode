@@ -1,0 +1,12 @@
+@media (min-width: 1024px) {
+
+    .ring {
+       height: 28rem;
+       width: 28rem;
+    }
+
+    .fav-moments {
+      padding: 5rem;
+    }
+
+}

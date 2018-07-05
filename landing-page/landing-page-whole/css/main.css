@@ -6,18 +6,21 @@
 }
 
 html, body {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 10px;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 h2 {
   font-size: 2.5rem;
   text-align: center;
   letter-spacing: .1rem;
-  margin: 5rem 2rem 2rem 2rem;
-  font-weight: 400;
+  margin: 3rem 2rem 2rem 2rem;
+  font-weight: 500;
+  color: #375c4e;
 }
 
 
@@ -28,14 +31,15 @@ header {
   display: table;
   height: 10rem;
   width: 100%;
-  background-color: #333;
+  background-color: #fff;
+  padding: 0 2rem;
 }
 
 .logo-box {
   position: relative;
   display: table-cell;
   width: 15%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 img.logo {
@@ -44,14 +48,14 @@ img.logo {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 7.5rem;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 nav {
   display: table-cell;
   height: 10rem;
   width: 85%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 ul.nav-list {
@@ -60,53 +64,64 @@ ul.nav-list {
   height: 100%;
   padding: 0;
   margin: 0;
-  border: 1px dotted yellow;
+  /* border: 1px dotted yellow; */
 }
 
 li.nav-item {
-  border: 1px solid lightgrey;
+  /* border: 1px solid lightgrey; */
   display: table-cell;
   height: 100%;
   width: 20%;
 }
 
 li.nav-item a.nav-link {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   display: block;
   text-align: center;
   text-decoration: none;
   width: 100%;
   height: 100%;
-  color: #f9f9f9;
+  color: #375b4e;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 10rem;
+  border-bottom: 2px solid transparent;
+  transition: border .2s;
+}
+
+li.nav-item a.nav-link:hover {
+  color: #375b4e;
+  border-bottom: 2px solid #375b4e;
 }
 
 /* =============================================================================
   MAIN
 ============================================================================= */
 main {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /* HOME SECTION ------------------------------------------------------------- */
 .home-section-one {
   position: relative;
   height: 50rem;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   padding: 2rem 2rem 1rem 2rem;
+
 }
 
 .top-modal {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
+  background-image: url('../media/home-photo1.jpg');
+  background-size: cover;
+  background-position: bottom;
+  /* border: 1px solid black; */
 }
 
 a.hire-me-btn {
-  border: 1px solid black;
+  /* border: 2px solid #659e84; */
   border-radius: .5rem;
   height: 15rem;
   width: 15rem;
@@ -115,17 +130,29 @@ a.hire-me-btn {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: #669f84;
   text-align: center;
   font-size: 2rem;
   text-decoration: none;
-  color: #333;
+  color: #fff;
+  font-weight: 300;
+  box-shadow: 0 0px 50px 5px rgba(255,255,255, 0);
+  transition: background-color .2s;
+}
+
+a.hire-me-btn:hover {
+
+  background-color: #9fd4ab;
+
+
 }
 
 .home-section-two {
   height: 40rem;
   padding: 0 1rem 0 1rem;
-  border: 2px solid purple;
+  margin-bottom: 4rem;
+
+  /* border: 2px solid purple; */
 }
 
 .home-section-two__blockOne,
@@ -133,55 +160,99 @@ a.hire-me-btn {
   display: inline-block;
   height: 100%;
   width: 50%;
-  border: 1px solid orange;
-  padding: 1rem;
+  /* border: 1px solid orange; */
+  padding: 1rem 1rem 2rem 1rem;
 }
 
 .inside-box {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-/* HOME SECTION ------------------------------------------------------------- */
+.left-box {
+  background-image: url('../media/home-photo2.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.right-box {
+  background-image: url('../media/home-photo3.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+/* ABOUT SECTION ------------------------------------------------------------- */
 .about-section {
+  position: relative;
+  display: inline-block;
   width: 100%;
-  border: 2px solid blue;
-  padding: 1rem 2rem 1rem 2rem;
-
+  /* border: 2px solid blue; */
+  padding: 5rem 0;
+  /* background-color: rgba(198, 221, 172, .3); */
+  background-color: #f8f8f8;
+  background-image: url("../media/about-me-photo.jpg");
+  /* background: linear-gradient(90deg, #fff, #fff 40%, transparent), url("../media/about-me-photo.jpg") no-repeat right; */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
+/* h2.left {
+  text-align: left;
+  padding-left: 2rem;
+} */
 
 .about-section__top {
   padding: 0 2rem;
   width: 100%;
-  border: 1px solid black;
+  /* display: table; */
+  /* border: 1px solid black; */
 }
 
-.about-section__top p {
+div.paragraphs {
+  /* display: table-cell; */
+  background-color: rgba(255,255,255, .9);
+  width: 50%;
   font-size: 1.6rem;
   line-height: 1.6;
+  color: #375b4e;
+  padding: 2rem;
+}
+
+.btn-box {
+  padding: 3rem;
+}
+
+.about-me-photo-box {
+  display: inline-block;
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+  background-image: url('home-photo1.jpg');
 }
 
 /* FAVORITES SECTION ------------------------------------------------------------- */
 .favorites-section {
   width: 100%;
-  border: 2px solid teal;
+  /* border: 2px solid teal; */
   padding: 2rem;
+  background-color: #fff;
+  padding: 4rem 2rem;
 }
 
 .favorites-section__inner {
   width: 100%;
   height: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .fav-moments {
   position: relative;
-  padding: 8rem 5rem 5rem 5rem;
+  padding: 8rem 0rem 8rem 0rem;
   height: auto;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .moments {
@@ -199,6 +270,8 @@ a.hire-me-btn {
   border-radius: 50%;
   transition: all .2s;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
 .ring:hover {
@@ -250,22 +323,27 @@ When user hovers over ring
 .one {
   z-index: 500;
   background-color: #303030;
+  background-image: url('../media/fav-1.jpg');
 }
 .two {
   z-index: 300;
   background-color: #909090;
+  background-image: url('../media/fav-2.jpg');
 }
 .three {
   z-index: 100;
   background-color: #f0f0f0;
+  background-image: url('../media/fav-3.jpg');
 }
 .four {
   z-index: 400;
   background-color: #606060;
+  background-image: url('../media/fav-4.jpg');
 }
 .five {
   z-index: 200;
   background-color: #c0c0c0;
+  background-image: url('../media/fav-5.jpg');
 }
 
 .raise {
@@ -281,21 +359,48 @@ When user hovers over ring
 
 }
 
+/* OFFER SECTION ---------------------------------------------------------- */
+
+.offer-section {
+  position: relative;
+  height: 25rem;
+  background-image: url('../media/offer-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 6rem;
+  font-weight: 400;
+}
+
+.offer-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 5rem;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
 
 /* PRICING SECTION ---------------------------------------------------------- */
 
 .pricing-section {
   width: 100%;
-  border: 2px solid brown;
-  padding: 5rem 1rem;
   border-collapse: collapse;
   overflow: hidden;
   display: table;
 }
 
+.pricing-section h2 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
 .price-category {
   height: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: table-row;
 }
 
@@ -314,6 +419,7 @@ When user hovers over ring
 .price-category__box--content h3 {
   font-size: 2rem;
   text-align: center;
+  color: #375b4e;
 }
 
 .price-category__box--content p {
@@ -327,6 +433,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
+  color: #375b4e;
 }
 
 h4 {
@@ -343,22 +450,26 @@ h4 {
 
 .pricing-row {
     display: table-row;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .pricing-data {
     display: table-cell;
     width: 33.3333333333%;
     text-align: center;
-    padding: 1rem;
-    border: 1px solid black;
+    padding: 3rem 1rem 5rem 1rem;
+    padding-bottom: 10rem;
+    /* border: 1px solid black; */
 }
 
 .inner-box {
-  border: 1px solid black;
+  border: .5rem solid #d3e6d9;
   padding: 2rem;
   width: 100%;
   margin: 0 auto;
+  background-color: #e6f1e9;
+  border-radius: 0rem;
+  /* background-color: #fff; */
 }
 
 .inner-box p {
@@ -391,8 +502,8 @@ a.btn-prim:link,
 a.btn-prim:visited  {
   display: block;
   max-width: 75%;
-  background-color: darkgrey;
-  color: #333;
+  background-color: #669f84;
+  color: #fff;
   font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
@@ -401,19 +512,28 @@ a.btn-prim:visited  {
   margin: auto;
   border-radius: .3rem;
   cursor: pointer;
-  letter-spacing: .5px;
-  font-weight: 100;
+  letter-spacing: .75px;
+  font-weight: 300;
+  transition: background-color .2s;
+}
+
+a.btn-prim:hover  {
+  background-color: #375b4e;
 }
 
 
 /* CONTACT SECTION ---------------------------------------------------------- */
 
 .contact-section {
-  padding: 10rem;
+  padding: 7rem;
   min-height: 60rem;
   width: 100%;
-  border: 2px dotted purple;
+  /* border: 2px dotted purple; */
   position: relative;
+  background-image: url('../media/contact-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .contact-header {
@@ -427,7 +547,7 @@ a.btn-prim:visited  {
   width: 40%;
   border: 1px solid black;
   margin: 0 auto;
-  background-color: rgba(0,0,0, 0);
+  background-color: rgba(255,255,255, .95);
   border-radius: .5rem;
   /* box-shadow: 0 .5rem .5rem .5rem rgba(0,0,0,.25) */
 }
@@ -452,7 +572,7 @@ a.btn-prim:visited  {
 .form-box textarea:active,
 .form-box textarea:focus {
   cursor: text;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .form-box label {
@@ -461,7 +581,7 @@ a.btn-prim:visited  {
   margin-bottom: 1rem;
   padding-left: 1rem;
   font-size: 1.7rem;
-  color: #353535;
+  color: #375b4e;
 }
 
 .form-box textarea {
@@ -469,15 +589,12 @@ a.btn-prim:visited  {
 }
 
 
-
-
-
 /* FOOTER ---------------------------------------------------------- */
 
 footer {
   position: relative;
   height: 30rem;
-  background-color: #333;
+  /* background-color: #e6f1e9; */
   text-align: center;
 }
 
@@ -486,7 +603,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .footer-list {
@@ -502,14 +619,14 @@ footer {
 }
 
 .footer-icons a {
-  border: 1px dotted white;
+  /* border: 1px dotted white; */
   display: inline-block;
-  color: #333;
+  color: #375b4e;
 }
 
 i.footer-icon {
   font-size: 5rem;
-  color: #aaa;
+  color: ##375c4e;
 }
 
 .copyright-text {
@@ -517,7 +634,6 @@ i.footer-icon {
   position: absolute;
   bottom: .5rem;
   text-align: center;
-  color: #aaa;
+  color: #375c4e;
   font-size: 1.3rem;
 }
-/*  */

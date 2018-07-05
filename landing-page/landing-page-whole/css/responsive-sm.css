@@ -1,0 +1,36 @@
+@media (min-width: 769px) and (max-width: 899px) {
+
+    .fav-moments {
+      padding-bottom: 2rem;
+    }
+
+    .moments {
+      max-height: none;
+    }
+
+    .ring {
+       height: 23rem;
+       width: 23rem;
+    }
+
+    .ring:hover {
+      transform: scale(1.25);
+    }
+
+    .ring.raise:hover {
+      transform: translateY(-50%) scale(1.25);
+    }
+
+    .contact-section {
+      margin: 0 auto;
+      padding: 8rem;
+      width: 80%;
+    }
+
+
+    .form-box {
+      padding: 2rem;
+      width: 100%;
+    }
+
+}
