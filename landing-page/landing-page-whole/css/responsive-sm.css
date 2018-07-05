@@ -21,6 +21,37 @@
       transform: translateY(-50%) scale(1.25);
     }
 
+
+    .pricing-section {
+      width: 100%;
+      display: block;
+    }
+
+    .price-category {
+      display: block;
+    }
+
+    .price-category__box {
+      display: block;
+      width: 100%;
+    }
+
+    .pricing-table{
+        width: 100%;
+        display: block;
+    }
+
+    .pricing-row {
+        display: block;
+        width: 100%;
+    }
+
+    .pricing-data {
+        display: block;
+        width: 100%;
+        padding: 2rem;
+    }
+
     .contact-section {
       margin: 0 auto;
       padding: 8rem;

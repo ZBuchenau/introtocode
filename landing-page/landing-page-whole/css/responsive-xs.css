@@ -66,11 +66,26 @@
 
 /* ABOUT SECTION ------------------------------------------------------------- */
 
+    .about-section {
+      background-attachment: scroll;
+    }
+
     .about-section__top p {
       font-size: 1.5rem;
       line-height: 1.6;
     }
 
+    div.paragraphs {
+      width: 100%;
+      background-color: rgba(255,255,255, .85)
+    }
+
+
+/* OFFER SECTION ------------------------------------------------------------- */
+
+    .offer-section {
+      background-attachment: scroll;
+    }
 
 /* FAVORITES SECTION ------------------------------------------------------------- */
     .favorites-section {
@@ -116,12 +131,12 @@
       font-size: 1.5rem;
     }
 
-    .four {
+    /* .four {
       display: none;
     }
     .five {
       display: none;
-    }
+    } */
 
     .raise {
       transform: none;
