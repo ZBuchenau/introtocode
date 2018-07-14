@@ -1,4 +1,8 @@
-@media (min-width: 769px) and (max-width: 899px) {
+@media (max-width: 900px) {
+
+    .favorites-section {
+      height: 60rem;
+    }
 
     .fav-moments {
       padding-bottom: 2rem;
@@ -9,22 +13,23 @@
     }
 
     .ring {
-       height: 23rem;
-       width: 23rem;
+       height: 20rem;
+       width: 20rem;
     }
 
     .ring:hover {
-      transform: scale(1.25);
+      transform: scale(1.4);
     }
 
-    .ring.raise:hover {
-      transform: translateY(-50%) scale(1.25);
+    .raise:hover {
+      transform: translateY(-50%) scale(1.4);
     }
 
 
     .pricing-section {
-      width: 100%;
+      width: 80%;
       display: block;
+      margin: 0 auto;
     }
 
     .price-category {
@@ -52,15 +57,7 @@
         padding: 2rem;
     }
 
-    .contact-section {
-      margin: 0 auto;
-      padding: 8rem;
-      width: 100%;
-    }
-
-
     .form-box {
-      padding: 2rem;
       width: 75%;
     }
 

@@ -1,8 +1,20 @@
-@media (min-width: 1024px) {
+@media (max-width: 1200px) {
+
+    .favorites-section {
+      height: 75rem;
+    }
 
     .ring {
-       height: 28rem;
-       width: 28rem;
+       height: 29rem;
+       width: 29rem;
+    }
+
+    .ring:hover {
+      transform: scale(1.4);
+    }
+
+    .ring.raise:hover {
+      transform: translateY(-50%) scale(1.4);
     }
 
     .fav-moments {
