@@ -217,6 +217,7 @@ div.paragraphs {
   padding: 2rem;
   background-color: #fff;
   padding: 2rem 2rem;
+  overflow: hidden;
 }
 
 .favorites-section__inner {

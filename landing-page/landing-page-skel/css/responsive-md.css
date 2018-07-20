@@ -1,0 +1,22 @@
+@media (max-width: 1024px) {
+
+    .favorites-section {
+      height: 70rem;
+    }
+
+    .ring {
+       height: 25rem;
+       width: 25rem;
+    }
+
+    .contact-section {
+      margin: 0 auto;
+      padding: 8rem;
+      width: 100%;
+    }
+
+    .form-box {
+      padding: 2rem;
+      width: 50%;
+    }
+}

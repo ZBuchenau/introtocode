@@ -1,0 +1,640 @@
+/* =============================================================================
+  GLOBAL
+============================================================================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  max-width: 140rem;
+}
+
+body {
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+h2 {
+  border: 1px solid black;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: .1rem;
+  margin: 3rem 2rem 2rem 2rem;
+  font-weight: 500;
+  color: #375c4e;
+}
+
+
+/* =============================================================================
+  HEADER
+============================================================================= */
+header {
+  border: 1px solid black;
+  display: table;
+  height: 10rem;
+  width: 100%;
+  background-color: #fff;
+  padding: 0 2rem;
+}
+
+.logo-box {
+  border: 1px solid black;
+  position: relative;
+  display: table-cell;
+  width: 15%;
+}
+
+img.logo {
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 7.5rem;
+}
+
+nav {
+  border: 1px solid black;
+  display: table-cell;
+  height: 10rem;
+  width: 85%;
+}
+
+ul.nav-list {
+  border: 1px solid grey;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+li.nav-item {
+  border: 1px solid green;
+  display: table-cell;
+  height: 100%;
+  width: 20%;
+}
+
+li.nav-item a.nav-link {
+  border: 1px solid black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #375b4e;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 10rem;
+  border-bottom: 2px solid transparent;
+  transition: border .2s;
+}
+
+li.nav-item a.nav-link:hover {
+  /* color: #375b4e;
+  border-bottom: 2px solid #375b4e; */
+}
+
+/* =============================================================================
+  MAIN
+============================================================================= */
+main {
+    border: 1px solid black;
+}
+
+/* HOME SECTION ------------------------------------------------------------- */
+.home-section-one {
+  border: 1px solid black;
+  position: relative;
+  height: 50rem;
+  padding: 2rem 2rem 1rem 2rem;
+
+}
+
+.top-modal {
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+}
+
+a.hire-me-btn {
+  border: 1px solid black;
+  border-radius: .5rem;
+  height: 15rem;
+  width: 15rem;
+  line-height: 15rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: grey;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  box-shadow: 0 0px 50px 5px rgba(255,255,255, 0);
+  transition: background-color .2s;
+}
+
+a.hire-me-btn:hover {
+  /* background-color: #9fd4ab; */
+}
+
+.home-section-two {
+  border: 1px solid black;
+  height: 40rem;
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 4rem;
+}
+
+.home-section-two__blockOne,
+.home-section-two__blockTwo {
+  border: 1px solid black;
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.inside-box {
+  height: 100%;
+  width: 100%;
+}
+
+.left-box {
+  border: 1px solid black;
+}
+
+.right-box {
+  border: 1px solid black;
+}
+
+/* ABOUT SECTION ------------------------------------------------------------- */
+.about-section {
+  border: 1px solid black;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 5rem 0;
+  background-color: #f8f8f8;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-section__top {
+  border: 1px solid black;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+div.paragraphs {
+  border: 1px solid black;
+  background-color: rgba(255,255,255, .9);
+  width: 50%;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #375b4e;
+  padding: 2rem;
+  border-radius: .5rem;
+}
+
+.btn-box {
+  border: 1px solid black;
+  padding: 3rem;
+}
+
+/* FAVORITES SECTION ------------------------------------------------------------- */
+.favorites-section {
+  border: 1px solid black;
+  width: 100%;
+  height: 85rem;
+  padding: 2rem;
+  background-color: #fff;
+  padding: 2rem 2rem;
+  overflow: hidden;
+}
+
+.favorites-section__inner {
+
+}
+
+.fav-moments {
+  border: 1px solid black;
+  position: relative;
+  padding: 2rem 0rem 2rem 0rem;
+  height: auto;
+  width: 100%;
+}
+
+.moments {
+  border: 1px solid black;
+  margin: auto 0;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.ring {
+  border: 1px solid black;
+  position: relative;
+  display: inline-block;
+  height: 38rem;
+  width: 38rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all .2s;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.ring:hover {
+  z-index: 999;
+  transform: scale(1.2);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+a.ring__child {
+  border: 1px solid black;
+  padding: 1rem;
+  line-height: 1.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  color:  rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-decoration: none;
+  -webkit-transition: opacity .5s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  border-radius: .5rem;
+  cursor: pointer !important;
+  backface-visibility: hidden;
+}
+
+.ring:hover > a.ring__child {
+  background-color: rgba(255, 255, 255, .3);
+  color:  rgba(0, 0, 0, 1);
+  transition: all .2s;
+  box-shadow: 0 2px 10px 5px rgba(0,0,0, 0);
+}
+
+/*
+When user hovers over ring
+& user hovers over child <a> tag
+*/
+
+.ring:hover > a.ring__child:hover {
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 5px 20px 0px rgba(0,0,0, .25);
+}
+
+.one {
+  z-index: 500;
+  background-color: #303030;
+}
+.two {
+  z-index: 300;
+  background-color: #909090;
+}
+.three {
+  z-index: 100;
+  background-color: #f0f0f0;
+}
+.four {
+  z-index: 400;
+  background-color: #606060;
+}
+.five {
+  z-index: 200;
+  background-color: #c0c0c0;
+}
+
+.raise {
+  transform: translateY(-50%);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.ring.raise:hover {
+  transform: translateY(-50%) scale(1.2);
+
+}
+
+/* OFFER SECTION ---------------------------------------------------------- */
+
+.offer-section {
+  border: 1px solid black;
+  position: relative;
+  height: 25rem;
+  font-size: 2.5rem;
+  color: #000;
+  text-align: center;
+  padding-top: 6rem;
+  font-weight: 400;
+}
+
+.offer-btn {
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  bottom: 5rem;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+
+/* PRICING SECTION ---------------------------------------------------------- */
+
+.pricing-section {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  display: table;
+}
+
+.pricing-section h2 {
+  border: 1px solid black;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.price-category {
+  border: 1px solid black;
+  height: 100%;
+  display: table-row;
+}
+
+.price-category__box {
+  border: 1px solid black;
+  display: table-cell;
+  width: 33.3333333333333333333333333333%;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.price-category__box--content {
+  border: 1px solid black;
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.price-category__box--content h3 {
+  border: 1px solid black;
+  font-size: 2rem;
+  text-align: center;
+  color: #375b4e;
+}
+
+.price-category__box--content p {
+  border: 1px solid black;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+h3 {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #375b4e;
+}
+
+h4 {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.pricing-table{
+    border: 1px solid black;
+    overflow: hidden;
+    width:100%;
+    display: table;
+    border-collapse: collapse;
+}
+
+.pricing-row {
+  border: 1px solid black;
+  display: table-row;
+    /* border: 1px solid purple; */
+}
+
+.pricing-data {
+  border: 1px solid black;
+    display: table-cell;
+    width: 33.3333333333%;
+    text-align: center;
+    padding: 3rem 1rem 5rem 1rem;
+    padding-bottom: 10rem;
+    /* border: 1px solid black; */
+}
+
+.inner-box {
+  border: 1px solid black;
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0rem;
+}
+
+.inner-box p {
+  border: 1px solid black;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding: 2rem;
+  margin: 0;
+}
+
+ul.pricing-box {
+  border: 1px solid black;
+  padding: 2rem 2rem;
+  list-style: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.pricing-box li {
+  border: 1px solid black;
+  padding: 2rem 3rem;
+  border-top: 1px solid lightgrey;
+}
+
+.pricing-box i {
+  border: 1px solid black;
+  padding-right: 1rem;
+  color: green;
+}
+
+a.btn-prim,
+a.btn-prim:link,
+a.btn-prim:visited  {
+  border: 1px solid black;
+  display: block;
+  max-width: 75%;
+  background-color: #669f84;
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  margin: 0 auto;
+  margin: auto;
+  border-radius: .3rem;
+  cursor: pointer;
+  letter-spacing: .75px;
+  font-weight: 300;
+  transition: background-color .2s;
+}
+
+a.btn-prim:hover  {
+  /* background-color: #375b4e; */
+}
+
+
+/* CONTACT SECTION ---------------------------------------------------------- */
+
+.contact-section {
+  border: 1px solid black;
+  padding: 7rem;
+  min-height: 60rem;
+  width: 100%;
+  position: relative;
+}
+
+.contact-header {
+  border: 1px solid black;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+
+.form-box {
+  border: 1px solid black;
+  padding: 4rem;
+  height: 100%;
+  width: 40%;
+  margin: 0 auto;
+  background-color: rgba(255,255,255, .95);
+  border-radius: .5rem;
+}
+
+.form-box input,
+.form-box textarea {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 1rem 1rem;
+  font-size: 1.6rem;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid grey;
+  cursor: text;
+  transition: all .3s;
+  border-radius: .3rem;
+}
+
+.form-box input:active,
+.form-box input:focus,
+.form-box textarea:active,
+.form-box textarea:focus {
+  cursor: text;
+  /* border: 1px solid green; */
+}
+
+.form-box label {
+  border: 1px solid black;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  font-size: 1.7rem;
+  color: #375b4e;
+}
+
+.form-box textarea {
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+
+/* FOOTER ---------------------------------------------------------- */
+
+footer {
+  border: 1px solid black;
+  position: relative;
+  height: 30rem;
+  /* background-color: #e6f1e9; */
+  text-align: center;
+}
+
+.footer-icons {
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid white; */
+}
+
+.footer-list {
+  border: 1px solid black;
+  display: table;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-item {
+  border: 1px solid black;
+  display: table-cell;
+  list-style: none;
+  padding: 2rem;
+}
+
+.footer-icons a {
+  border: 1px solid black;
+  /* border: 1px dotted white; */
+  display: inline-block;
+  color: #375b4e;
+}
+
+i.footer-icon {
+  border: 1px solid black;
+  font-size: 5rem;
+  color: ##375c4e;
+}
+
+.copyright-text {
+  border: 1px solid black;
+  width: 100%;
+  position: absolute;
+  bottom: .5rem;
+  text-align: center;
+  color: #375c4e;
+  font-size: 1.3rem;
+}
